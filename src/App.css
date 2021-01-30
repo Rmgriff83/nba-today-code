@@ -1,0 +1,145 @@
+#progressBar {
+  margin-top: 35vh;
+}
+#title-box-area {
+  /* border: 1px solid red; */
+  width: fit-content;
+  margin-top: 2%;
+  margin-left: 7.5%;
+  margin-bottom: 30px;
+}
+
+#bball {
+  width: 100px;
+  margin: 0%;
+}
+#title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 0%;
+  display: inline;
+  font-size: 2.3em;
+}
+#title-date {
+  font-size: 0.55em;
+  color: gray;
+  border-bottom: 1px solid gray;
+  margin-left: 100px;
+}
+
+#list-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5px;
+  justify-items: center;
+  margin-bottom: 2.5%;
+}
+@media (min-width: 0px) and (max-width: 700px) {
+  #list-cont {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+  #list-cont {
+    grid-template-columns: 1fr;
+  }
+}
+
+.game {
+  /* border-bottom: 2px solid lightgray; */
+  border-radius: 2px;
+  /* background-color: rgb(247, 242, 236); */
+  width: 20vw;
+  height: fit-content;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.5em;
+  padding-top: 5%;
+}
+
+.scores {
+  font-size: 1.2em;
+  text-emphasis: center;
+}
+
+.active-game {
+  animation-name: gameActive;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes gameActive {
+  from {
+    color: black;
+  }
+  to {
+    color: rgb(105, 191, 105);
+    text-shadow: 20px 20px 50px green;
+  }
+}
+
+.upcoming-game {
+  color: rgb(228, 139, 31);
+}
+.view-game-btn {
+}
+
+#wrapper {
+  width: fit-content;
+  margin: auto;
+}
+
+#selected-score-box {
+  text-align: center;
+}
+.team-header-stats {
+  border-bottom: 2px solid darkgray;
+  width: fit-content;
+  margin: 30px auto;
+  font-size: 1.35em;
+}
+
+.stats-player-box {
+  width: fit-content;
+  border-left: 5px solid white;
+  margin: 2px;
+  border-radius: 2px;
+}
+
+#player-tab {
+  background-color: rgb(240, 239, 239);
+  border-left: 2px solid darkgray;
+  margin: 5px;
+  /* box-shadow: 0.1px 0.1px 2px; */
+}
+.stat-name {
+  margin: 5%;
+}
+
+.stat {
+  margin: 5px;
+  padding: 2px;
+  border: 1px solid lightgray;
+  font-size: 0.75em;
+  background-color: white;
+  border-radius: 2px;
+}
+
+#team-stats-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  #team-stats-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+.teamAbbreviation {
+  border-bottom: 1px dotted darkgray;
+}
+.logo {
+  width: 90px;
+  position: absolute;
+  transform: translate(-130px, 0px);
+}
